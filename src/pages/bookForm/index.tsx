@@ -21,6 +21,8 @@ export function BookForm({onSubmit} : BookFormProps) {
         }
 
         onSubmit(book)
+
+        bookText.current!.value = ""
     }
 
     return (

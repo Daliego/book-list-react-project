@@ -14,7 +14,7 @@ export interface Book {
 function App() {
   const [bookList, setBookList] = useState<Book[]>(bookListData)
 
-  const addBook = (book: Book) => {
+  const addBook = (book: Book) => { 
     setBookList([book, ...bookList])
   }
 
